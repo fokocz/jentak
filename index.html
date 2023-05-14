@@ -1,0 +1,110 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js"></script>
+
+    <style>
+        /* skryjeme inicialne podkategorie */
+        .subcat1, .subcat2, .subcat3, .subcat4 
+        {
+            display: none;
+        }
+        /* nastavime zlinujici animaci pro zobrazovani podkategori */
+        .fadein {
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+    <table id="table">
+        <tr>
+            <td colspan="2">
+                <div class="header">Kytky do ruky</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="div1">
+                    <img src="1.png" style="width: 50%;" />
+                    <p>popis první kategorie</p>
+                    <button class="btn btn1" data-subcat="subcat1">Category 1</button>
+                    <br /><br />
+                </div>
+            </td>
+            <td>
+                <div class="div1">
+                    <img src="2.png" style="width: 50%;" />
+                    <p>popis druhé kategorie</p>
+                    <button class="btn btn2" data-subcat="subcat2">Category 2</button>
+                    <br /><br />
+                </div>
+            </td>
+            <td>
+                <div class="div1">
+                    <img src="3.png" style="width: 50%;" />
+                    <p>popis třetí kategorie</p>
+                    <button class="btn btn3" data-subcat="subcat3">Category 3</button>
+                    <br /><br />
+                </div>
+            </td>
+            <td>
+                <div class="div1">
+                    <img src="4.png" style="width: 50%;" />
+                    <p>popis čtvrté kategorie</p>
+                    <button class="btn btn4" data-subcat="subcat4">Category 4</button>
+                    <br /><br />
+                </div>
+            </td>
+        </tr>
+        <!-- vlozime podkategorie pod kategorie, ale skryjeme je -->
+        <tr class="subcat1 subcat">
+            <td>
+                <div class="div2">
+                    <img src="1.png" style="width: 50%;" />
+                    <p>popis první podkategorie</p>
+                    <br /><br />
+                </div>
+            </td>
+            <td>
+                <div class="div2">
+                    <img src="2.png" style="width: 50%;" />
+                    <p>popis druhé podkategorie</p>
+                    <br /><br />
+                </div>
+            </td>
+            <td>
+                <div class="div2">
+                    <img src="3.png" style="width: 50%;" />
+                    <p>popis třetí podkategorie</p>
+                    <br /><br />
+                </div>
+            </td>
+            <td>
+                <div class="div2">
+                    <img src="4.png" style="width: 50%;" />
+                    <p>popis čtvrtá podkategorie</p>
+                    <br /><br />
+                </div>
+            </td>
+            <tr>
+                <td colspan="4">&nbsp;</td>
+            </tr>
+        </table>
+    </body>
+    
+    </html>
